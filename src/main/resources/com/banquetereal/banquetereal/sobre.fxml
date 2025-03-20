@@ -6,9 +6,9 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<VBox xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+<VBox xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.banquetereal.banquetereal.SobreController">
     <children>
-        <AnchorPane prefHeight="580.0" prefWidth="1000.0" style="-fx-background-color: white;">
+        <AnchorPane fx:id="anchorPane" prefHeight="580.0" prefWidth="1000.0" style="-fx-background-color: white;">
             <children>
 
                 <!-- Texto sobre a chef -->
@@ -17,7 +17,7 @@
                 <!-- Imagem da chef -->
                 <ImageView fitHeight="200.0" fitWidth="172.0" layoutX="421.0" layoutY="315.0">
                     <image>
-                        <Image url="@/Chefedecozinha.png" />
+                        <Image url="@Chefedecozinha.png" />
                     </image>
                 </ImageView>
 
@@ -27,22 +27,22 @@
                 <!-- Imagem do ambiente -->
                 <ImageView fitHeight="162.0" fitWidth="229.0" layoutX="35.0" layoutY="107.0">
                     <image>
-                        <Image url="@/Espaccasamento.png" />
+                        <Image url="@Espaccasamento.png" />
                     </image>
                 </ImageView>
 
                 <!-- Logo -->
                 <ImageView fitHeight="95.0" fitWidth="138.0" layoutX="42.0" layoutY="6.0">
                     <image>
-                        <Image url="@/banqueteReal.png" />
+                        <Image url="@banqueteReal.png" />
                     </image>
                 </ImageView>
 
                 <!-- Menu Textos -->
                 <Text layoutX="446.0" layoutY="58.0" text="Sobre nós" underline="true" />
-                <Text layoutX="534.0" layoutY="58.0" text="Casamento" />
-                <Text layoutX="632.0" layoutY="58.0" text="Festa de 15" />
-                <Text layoutX="729.0" layoutY="58.0" text="Confraternização" />
+                <Text layoutX="534.0" layoutY="58.0" onMouseClicked="#goCasamento" text="Casamento" />
+                <Text layoutX="632.0" layoutY="58.0" onMouseClicked="#goFestaDeQuinze" text="Festa de 15" />
+                <Text layoutX="729.0" layoutY="58.0" onMouseClicked="#goConfraternizacao" text="Confraternização" />
 
                 <!-- Retângulo -->
                 <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fae99d" height="579.0" layoutX="844.0" layoutY="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="161.0" />
@@ -56,7 +56,7 @@
                 <!-- Ícone localização -->
                 <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="290.0" layoutY="41.0">
                     <image>
-                        <Image url="@/localiadade.png" />
+                        <Image url="@localiadade.png" />
                     </image>
                 </ImageView>
 
@@ -64,13 +64,13 @@
                 <AnchorPane layoutX="662.0" layoutY="322.0" prefHeight="231.0" prefWidth="223.0" style="-fx-background-color: #fff8dc; -fx-border-radius: 10; -fx-background-radius: 10;">
                     <children>
                         <Text layoutX="31.0" layoutY="27.0" text="Pronto para transformar sua festa em um momento inesquecível?" textAlignment="JUSTIFY" wrappingWidth="161.0" />
-                        <Button layoutX="25.0" layoutY="143.0" style="-fx-background-color: #b08e3b; -fx-text-fill: white;" text="Solicite seu orçamento agora!" />
+                        <Button layoutX="25.0" layoutY="143.0" onAction="#goPagamento" style="-fx-background-color: #b08e3b; -fx-text-fill: white;" text="Solicite seu orçamento agora!" />
                     </children>
                 </AnchorPane>
 
                 <ImageView fitHeight="153.0" fitWidth="261.0" layoutX="651.0" layoutY="112.0">
                     <image>
-                        <Image url="@/decoracao.jpg" />
+                        <Image url="@decoracao.jpg" />
                     </image>
                 </ImageView>
 

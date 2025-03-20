@@ -1,14 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.banquetereal.banquetereal.ConfraternizacaoController"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.banquetereal.banquetereal.ConfraternizacaoController">
+    <children>
+        <ImageView fitHeight="298.0" fitWidth="492.0" layoutY="296.0">
+            <image>
+                <Image url="@confraternização.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcec9c" height="47.0" layoutX="396.0" layoutY="-9.0" stroke="WHITE" strokeType="INSIDE" width="515.0" />
+        <ImageView fitHeight="298.0" fitWidth="492.0">
+            <image>
+                <Image url="@degusta.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4f4f4" height="595.0" layoutX="423.0" layoutY="-3.0" stroke="TRANSPARENT" strokeType="INSIDE" width="138.0">
+            <effect>
+                <BoxBlur height="0.0" iterations="3" width="53.0" />
+            </effect>
+        </Rectangle>
+        <Label layoutX="762.0" layoutY="35.0" prefHeight="33.0" prefWidth="138.0" text="Confraternizações" textFill="#d7bf0b">
+            <font>
+                <Font name="Gloucester MT Extra Condensed" size="27.0" />
+            </font>
+        </Label>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcec9c" height="595.0" layoutX="900.0" layoutY="1.0" stroke="#fcec9c" strokeType="INSIDE" width="12.0" />
+        <MenuButton layoutX="595.0" layoutY="528.0" mnemonicParsing="false" text="CONFRATERNIZACÕES">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Ano Novo" />
+                <MenuItem mnemonicParsing="false" text="Festas de Aniversário" />
+                <MenuItem mnemonicParsing="false" text="Chás de Bebes" />
+                <MenuItem mnemonicParsing="false" text="Jantar Temático" />
+                <MenuItem mnemonicParsing="false" text="Reuniões" />
+                <MenuItem mnemonicParsing="false" text="Formatura" />
+            </items>
+            <font>
+                <Font name="Georgia" size="12.0" />
+            </font>
+        </MenuButton>
+        <RadioButton layoutX="505.0" layoutY="532.0" mnemonicParsing="false" text="All Incluse">
+            <font>
+                <Font name="Centaur" size="12.0" />
+            </font>
+        </RadioButton>
+        <ImageView fitHeight="162.0" fitWidth="318.0" layoutX="495.0" layoutY="68.0">
+            <image>
+                <Image url="@Captura de tela 2025-03-19 145027.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="14.0" layoutY="89.0" mnemonicParsing="false" text="☰" />
+        <Button layoutX="14.0" layoutY="124.0" mnemonicParsing="false" onAction="#goSobre" text="🏠" />
+        <ImageView fitHeight="195.0" fitWidth="406.0" layoutX="492.0" layoutY="244.0">
+            <image>
+                <Image url="@Captura de tela 2025-03-19 153428.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="47.0" fitWidth="352.0" layoutX="519.0" layoutY="452.0">
+            <image>
+                <Image url="@Captura de tela 2025-03-19 153727.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="774.0" layoutY="525.0" mnemonicParsing="false" onAction="#goPagamento" text="ORÇAMENTO">
+            <font>
+                <Font name="Gabriola" size="16.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="78.0" fitWidth="80.0" layoutX="14.0" layoutY="-1.0">
+            <image>
+                <Image url="@banqueteReal.png" />
+            </image>
+        </ImageView>
+    </children>
+</Pane>
